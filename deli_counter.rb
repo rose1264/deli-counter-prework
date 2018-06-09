@@ -16,3 +16,11 @@ def take_a_number(katz_deli, name)
     puts "Welcome, Grace. You are number #{num} in line."
   end
 end
+
+def now_serving(katz_deli)
+  if katz_deli.length == 0
+    puts "The line is empty"
+  else
+    name = katz_deli.shift
+    puts "Now serving #{name}"
+end
