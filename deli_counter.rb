@@ -7,5 +7,12 @@ def line(katz_deli)
 end
 
 def take_a_number(katz_deli, name)
+  if katz_deli.length == 0
     katz_deli.push(name)
+    puts "Welcome, Ada. You are number 1 in line."
+  else
+    katz_deli.push(name)
+    num = katz_deli.index(name) + 1
+    puts "Welcome, Grace. You are number #{num} in line."
+  end
 end
